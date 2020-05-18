@@ -4,7 +4,7 @@
 # You'll see this now for yourself as you train a logistic regression model on exactly the same data as in the previous exercise. 
 # Will it outperform k-NN? There's only one way to find out!
 
-# The feature and target variable arrays X and y have been pre-loaded, 
+# The feature and target variable arrays are X and y respectively, 
 from sklearn.model_selection import train_test_split
 
 # Import the necessary modules
@@ -71,11 +71,13 @@ print(classification_report(y_test, y_pred))
 
 # First, note that you can retrieve accuracy from the confusion matrix:
 # it’s the sum of the diagonal divided by the total sum of the matrix.
-# once, this division is done There are several other important metrics, that you can  calculate from the confusion matrix.
+# once, this division is done
+ There are several other important metrics, that you can  calculate from the confusion matrix.
 
 # Precision, which is the number of true positives divided by the total number of true positives and false positives.
 # This is the amount predicted of True positives out of the True positives and False positives.
-# it is Presented as Percentage, It is also called the positive predictive value or PPV.
+# it is Presented as Percentage
+, It is also called the positive predictive value or PPV.
 # For example, this could  the number of correctly labeled spam emails divided by
 # the total number of emails divided by the total number of emails classified as spam
 
